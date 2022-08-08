@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Person {
-    public String fName, lName, email, organization, phoneNumber;
+    public String fName, lName, email,  phoneNumber;
     public Integer access;
     public Timestamp created;
     private FirebaseAuth auth;
@@ -34,8 +34,11 @@ public class Person {
         this.email = email;
         this.created = created;
         this.access = access;
-        this.organization = organization;
+        // this.organization = organization;
         this.phoneNumber = phoneNumber;
+    }
+
+    public Person(String fName, String lName, String email, Timestamp created, Integer access, String phoneNumber) {
     }
 
     public void setAuth(FirebaseAuth auth) {
@@ -62,9 +65,9 @@ public class Person {
         this.access = access;
     }
 
-    public void setOrganization(String organization) {
-        this.organization = organization;
-    }
+    // public void setOrganization(String organization) {
+    //     this.organization = organization;
+    // }
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
@@ -79,7 +82,7 @@ public class Person {
     }
 
     static void saveUser(FirebaseAuth auth, String fName, String lName, String email, String phoneNumber,
-            String orgName, FieldValue created) {
+             FieldValue created) {
         FirebaseUser user = auth.getCurrentUser();
         Map<String, Object> data = new HashMap<>();
         data.put("fName", fName);
@@ -88,7 +91,7 @@ public class Person {
         data.put("created", created);
         data.put("access", 0);
         data.put("phoneNumber", phoneNumber);
-        data.put("organization", orgName);
+        // data.put("organization", orgName);
 
         Database db = new Database(new AsyncResponse() {
             @Override

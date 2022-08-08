@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/borderradius.xml" value="0.141" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/ic_angle_left.xml" value="0.141" />
+        <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.1" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/ic_compass.xml" value="0.141" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/ic_heart.xml" value="0.141" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/ic_home.xml" value="0.141" />
@@ -16,13 +17,15 @@
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/ic_undraw_team_spirit_hrr4.xml" value="0.141" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/ic_undraw_unlock_24mb.xml" value="0.1615" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/ic_undraw_welcome_3gvl.xml" value="0.1615" />
+        <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/rounded_button_blue.xml" value="0.174" />
+        <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/drawable/rounded_button_white.xml" value="0.174" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_agent_main.xml" value="0.25" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_capture.xml" value="0.33" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_capture_portrait.xml" value="0.14628623188405798" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_forgot_password.xml" value="0.14628623188405798" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_login.xml" value="0.14628623188405798" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_main.xml" value="0.14628623188405798" />
-        <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_no_auth.xml" value="0.1" />
+        <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_no_auth.xml" value="0.25" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_user_main.xml" value="0.25" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/activity_view_event.xml" value="0.33" />
@@ -33,6 +36,9 @@
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/fragment_user_events.xml" value="0.33" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/item_calendar.xml" value="0.14628623188405798" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/item_event.xml" value="0.14628623188405798" />
+        <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/layout/item_line_up.xml" value="0.2" />
+        <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/menu/agent_navigation.xml" value="0.2" />
+        <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/menu/user_navigation.xml" value="0.2" />
         <entry key="..\:/Android Projects/Haba Golfers/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>

@@ -36,7 +36,7 @@ public class SignUpActivity extends AppCompatActivity {
         final TextInputEditText emailView = findViewById(R.id.email);
         final TextInputEditText passwordView = findViewById(R.id.password);
         final TextInputEditText phoneNumberView = findViewById(R.id.phoneNumber);
-        final TextInputEditText orgView = findViewById(R.id.organizationName);
+        // final TextInputEditText orgView = findViewById(R.id.organizationName);
 
         sign_up_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +46,7 @@ public class SignUpActivity extends AppCompatActivity {
                 final String email = Objects.requireNonNull(emailView.getText()).toString().trim();
                 final String password = Objects.requireNonNull(passwordView.getText()).toString().trim();
                 final String phoneNumber = Objects.requireNonNull(phoneNumberView.getText()).toString().trim();
-                final String orgName = Objects.requireNonNull(orgView.getText()).toString().trim();
+//                final String orgName = Objects.requireNonNull(orgView.getText()).toString().trim();
 
                 if (TextUtils.isEmpty(fName)) {
                     fNameView.setError(getString(R.string.fname_val));
@@ -68,17 +68,17 @@ public class SignUpActivity extends AppCompatActivity {
                     phoneNumberView.setError("Please provide a phone number.");
                     return;
                 }
-                if (TextUtils.isEmpty(orgName)) {
-                    orgView.setError("Please provide an organization name.");
-                    return;
-                }
+                // if (TextUtils.isEmpty(orgName)) {
+                //     orgView.setError("Please provide an organization name.");
+                //     return;
+                // }
 
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    Person.saveUser(mAuth, fName, lName, email, phoneNumber, orgName,
+                                    Person.saveUser(mAuth, fName, lName, email, phoneNumber, 
                                             FieldValue.serverTimestamp());
                                     Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
